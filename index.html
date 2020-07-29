@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tableau Embedded</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="./style.css" /> -->
+
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <h1>Tableau Embedded Practice</h1>
+
+    <!-- Create a button to hide viz -->
+    <button id="hideButton">Hide Viz</button>
+    <button id="showButton">Show Viz</button>
+
+    <!-- Create a container for the export options -->
+    <hr />
+    <button id="pdfButton">Download PDF</button>
+    <button id="pptButton">Download PPT</button>
+    <button id="dataButton">Download DATA</button>
+
+    <hr />
+    <h4>Filter Dates</h4>
+    <input id = "minDate" type="date" placeholder="Min date ..."></input>
+    <input id = "maxDate" type="date" placeholder="Max date ..."></input>
+    <button id= "filterButton">Filter Date</button>
+
+    <!-- Create a container for the Tableau Dashboard -->
+    <div id="vizContainer"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
